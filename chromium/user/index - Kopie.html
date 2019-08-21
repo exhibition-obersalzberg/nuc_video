@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video</title>
+    <style>     
+        body {
+            margin: 0px !important;
+        } 
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="fullscreen-bg">
+    <video autoplay muted loop class="fullscreen-bg__video">
+        <source src="C:\Users\danie\Documents\WSL\Balena\obersalzberg\nuc_video\chromium\user\video.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+</body>
+
+</html>

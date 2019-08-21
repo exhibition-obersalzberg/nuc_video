@@ -1,13 +1,12 @@
 version: '2'
 volumes: 
-    router_conf:
-    video:
+    video1:
 services:
-  omx:
-    build: ./omxnuc
+  chromium:
+    build: ./chromium
     privileged: true
     volumes:
-      - 'video:/video'
+      - 'video1:/home/viewer/video/'
     labels:
       io.resin.features.dbus: '1'
       io.resin.features.kernel-modules: '1'
